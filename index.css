@@ -1,0 +1,58 @@
+ * {
+        overflow: hidden;
+    }
+
+    .container {
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        overflow: hidden;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(6, auto);
+        gap: 3px;
+        /* overflow-y: hidden; */
+    }
+
+    .container>div {
+        background-color: brown;
+
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header {
+        margin-top: 25px;
+        grid-column: span 3;
+        background: linear-gradient(80deg, #745cdb, #8d79e2);
+    }
+
+    .sidebar {
+        grid-column: span 1;
+        grid-row: span 4;
+        background: linear-gradient(80deg, #29a59e, #3ce1d9);
+    }
+
+    .content1 {
+        grid-column: span 2;
+        grid-row: span 2;
+        background: linear-gradient(80deg, #6b52dc, #30c8e7);
+    }
+
+    .content2 {
+        grid-column: span 1;
+        grid-row: span 2;
+        background: linear-gradient(80deg, #6b52dc, #30c8e7);
+    }
+
+    .content3 {
+        grid-column: span 1;
+        grid-row: span 2;
+        background: linear-gradient(80deg, #6b52dc, #30c8e7);
+    }
+
+    .footer {
+        grid-column: span 3;
+        background: linear-gradient(80deg, #745cdb, #8d79e2);
+    }
